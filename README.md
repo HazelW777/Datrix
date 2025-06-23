@@ -1,61 +1,78 @@
-# Datrix - AI-Powered Data Marketplace
+# Datrix - Data Marketplace Platform
 
-A modern, intelligent data marketplace platform built with Next.js 15, React 19, and TypeScript. Datrix provides a comprehensive solution for buying, selling, and analyzing datasets with integrated AI-powered insights.
+A modern, full-featured data marketplace platform built with Next.js 15, React 19, and TypeScript. Datrix transforms traditional data analysis websites into comprehensive data marketplaces similar to Datarade, featuring AI-powered analysis, intelligent chatbots, and seamless data discovery.
 
-![Datrix Platform](https://img.shields.io/badge/Next.js-15.2.4-black?style=for-the-badge&logo=next.js)
-![React](https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-38B2AC?style=for-the-badge&logo=tailwind-css)
+![Datrix Banner](https://via.placeholder.com/1200x400/3B82F6/FFFFFF?text=Datrix+Data+Marketplace)
 
-## 🚀 Features
+## ✨ Features
 
-### 📊 **Data Marketplace**
+### 🏪 **Data Marketplace**
 
-- **Browse Datasets**: Explore diverse datasets across multiple categories
-- **Detailed Dataset Pages**: Comprehensive information with sample data, data dictionary, and quality metrics
-- **Vendor Dashboard**: Tools for data providers to manage and showcase their datasets
-- **Category & Provider Pages**: Organized browsing experience
+- **Comprehensive Dataset Catalog**: Browse through curated datasets across multiple categories
+- **Advanced Filtering**: Filter by category, provider, data quality, and geographic coverage
+- **Detailed Dataset Pages**: Complete information including sample data, data dictionaries, and quality metrics
+- **Provider Profiles**: Detailed vendor information and dataset portfolios
 
 ### 🤖 **AI-Powered Analysis**
 
-- **Intelligent Chatbot**: Global assistant to help users find relevant datasets
-- **AI Analysis Modal**: Advanced data analysis with Claude/ChatGPT-style interface
-- **Dynamic Insights**: Generate tables, charts, and analysis based on user queries
-- **Real-time Analysis**: Interactive left-right layout for continuous data exploration
+- **Smart AI Assistant**: Claude/ChatGPT-style interface for dataset analysis
+- **Interactive Queries**: Ask natural language questions like "Who are the top 5 customers by revenue?"
+- **Dynamic Results**: Generate tables, charts, and insights based on user queries
+- **Left-Right Layout**: Chat interface on the left, analysis results on the right
+
+### 💬 **Intelligent Chatbot**
+
+- **Global Assistant**: Available across all pages to help users find relevant datasets
+- **Smart Matching**: Keyword-based intelligent responses for data discovery
+- **Quick Suggestions**: Contextual follow-up questions and recommendations
+- **Dataset Recommendations**: Direct links to relevant datasets based on user queries
+
+### 📊 **Rich Data Visualization**
+
+- **Interactive Charts**: Built with Recharts for responsive data visualization
+- **Statistical Analysis**: Comprehensive data quality metrics and distribution charts
+- **Geographic Coverage**: Visual representation of global data coverage
+- **Trend Analysis**: Time-series data with growth patterns and seasonal insights
 
 ### 🎨 **Modern UI/UX**
 
-- **Responsive Design**: Optimized for all devices and screen sizes
-- **Beautiful Interface**: Modern design with gradient backgrounds and smooth animations
-- **Interactive Elements**: Hover effects, loading states, and intuitive navigation
-- **Accessibility**: WCAG compliant with proper contrast and keyboard navigation
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
+- **Dark/Light Themes**: Consistent design system with excellent contrast
+- **Smooth Animations**: Polished interactions and transitions
+- **Accessibility**: WCAG compliant with proper contrast ratios and keyboard navigation
 
-### 📈 **Data Visualization**
+## 🛠 Technology Stack
 
-- **Sample Data Tables**: Interactive data previews with proper formatting
-- **Statistical Charts**: Recharts integration for data visualization
-- **Quality Metrics**: Data completeness, accuracy, and consistency indicators
-- **Geographic Coverage**: Global data distribution visualization
+### **Frontend**
 
-## 🛠️ Tech Stack
+- **Next.js 15.2.4** - React framework with App Router
+- **React 19** - Latest React with concurrent features
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Utility-first CSS framework
+- **Radix UI** - Accessible component primitives
+- **Recharts** - Composable charting library
 
-- **Framework**: Next.js 15.2.4 with App Router
-- **Frontend**: React 19 with TypeScript
-- **Styling**: Tailwind CSS with custom design system
-- **UI Components**: shadcn/ui components
-- **Charts**: Recharts for data visualization
-- **Icons**: Lucide React icons
-- **State Management**: React Hooks
-- **Development**: ESLint, Prettier
+### **Components & UI**
 
-## 📦 Installation
+- **shadcn/ui** - Beautiful, accessible React components
+- **Lucide Icons** - Consistent icon system
+- **Custom Components** - Reusable, typed components
+
+### **Features**
+
+- **Server Components** - Optimized rendering with React Server Components
+- **Client Components** - Interactive features with proper hydration
+- **Dynamic Routing** - File-based routing with dynamic segments
+- **SEO Optimized** - Meta tags, structured data, and performance optimization
+
+## 🚀 Getting Started
 
 ### Prerequisites
 
 - Node.js 18+
-- npm or yarn
+- npm or yarn package manager
 
-### Setup Instructions
+### Installation
 
 1. **Clone the repository**
 
@@ -68,124 +85,171 @@ A modern, intelligent data marketplace platform built with Next.js 15, React 19,
 
    ```bash
    npm install
+   # or
+   yarn install
    ```
 
 3. **Run the development server**
 
    ```bash
    npm run dev
+   # or
+   yarn dev
    ```
 
 4. **Open your browser**
-   Navigate to [http://localhost:3000](http://localhost:3000)
-
-## 🎯 Usage Examples
-
-### Dataset Browsing
-
-1. Visit the marketplace page to browse available datasets
-2. Use filters to find specific categories or providers
-3. Click on any dataset to view detailed information
-
-### AI Analysis
-
-1. Open any dataset detail page
-2. Click the "AI Analysis" button
-3. Ask questions like:
-   - "Who are the top 5 customers by revenue?"
-   - "What are the most popular product categories?"
-   - "Show me sales trends over time"
-   - "Analyze customer demographics"
-
-### Chatbot Assistant
-
-1. Look for the blue chat button in the bottom-right corner
-2. Ask for help finding datasets or understanding pricing
-3. Get personalized recommendations based on your needs
+   Navigate to [http://localhost:3000](http://localhost:3000) to see the application.
 
 ## 📁 Project Structure
 
 ```
 datrix/
-├── app/                    # Next.js App Router pages
-│   ├── dataset/[id]/      # Dataset detail pages
+├── app/                    # Next.js 15 App Router
+│   ├── categories/         # Dataset categories page
+│   ├── dataset/[id]/      # Dynamic dataset detail pages
 │   ├── marketplace/       # Main marketplace page
-│   ├── categories/        # Category browsing
-│   ├── providers/         # Provider pages
-│   └── vendor-dashboard/  # Vendor management
+│   ├── providers/         # Data provider listings
+│   ├── vendor-dashboard/  # Vendor management interface
+│   ├── globals.css        # Global styles
+│   ├── layout.tsx         # Root layout component
+│   └── page.tsx          # Homepage
 ├── components/            # Reusable React components
-│   ├── chat-bot.tsx      # Global chatbot assistant
-│   ├── ai-analysis-modal.tsx # AI analysis interface
-│   └── ui/               # shadcn/ui components
-├── lib/                  # Utility functions and data
-│   └── sample-datasets.ts # Sample dataset configurations
-├── public/               # Static assets
-└── styles/               # Global styles and CSS
+│   ├── ui/               # shadcn/ui components
+│   ├── ai-analysis-modal.tsx  # AI analysis interface
+│   └── chat-bot.tsx      # Global chatbot component
+├── lib/                  # Utility functions and configurations
+│   └── sample-datasets.ts # Sample data configurations
+└── public/              # Static assets
 ```
 
-## 🎨 Key Components
+## 🎯 Key Features Walkthrough
 
-### ChatBot Component
+### 1. **Homepage**
 
-- **Location**: `components/chat-bot.tsx`
-- **Features**:
-  - Intelligent keyword matching
-  - Dataset recommendations
-  - Quick suggestion buttons
-  - Hidden on dataset detail pages
+- Hero section with clear value proposition
+- Featured datasets carousel
+- Category overview with statistics
+- Trusted by section with provider logos
 
-### AI Analysis Modal
+### 2. **Marketplace**
 
-- **Location**: `components/ai-analysis-modal.tsx`
-- **Features**:
-  - Left-right layout design
-  - Dynamic analysis generation
-  - Interactive result tables
-  - Real-time data processing
+- Grid layout with dataset cards
+- Advanced filtering and search
+- Sorting options (relevance, date, popularity)
+- Pagination for large datasets
 
-### Sample Datasets
+### 3. **Dataset Detail Pages**
 
-- **Location**: `lib/sample-datasets.ts`
-- **Includes**:
-  - FinTech transaction data
-  - B2B sales intelligence
-  - E-commerce consumer behavior
-  - Comprehensive data dictionaries
+- Comprehensive dataset information
+- Sample data preview with interactive tables
+- Data dictionary with field descriptions
+- Statistical analysis with charts
+- Geographic coverage visualization
+- Pricing and licensing information
 
-## 🔧 Configuration
+### 4. **AI Analysis Interface**
 
-### Environment Variables
+- Natural language query processing
+- Dynamic result generation
+- Interactive tables and charts
+- Contextual insights and recommendations
 
-Create a `.env.local` file in the root directory:
+### 5. **Global Chatbot**
 
-```env
-NEXT_PUBLIC_APP_URL=http://localhost:3000
-```
+- Floating assistant available on all pages
+- Intelligent keyword matching
+- Dataset recommendations
+- Quick action suggestions
 
-### Customization
+## 📊 Sample Datasets
 
-- **Colors**: Modify `app/globals.css` for theme customization
-- **Data**: Update `lib/sample-datasets.ts` to add new datasets
-- **Components**: Extend components in the `components/` directory
+The platform includes three comprehensive sample datasets:
+
+1. **FinTech Data** - Global Digital Payment Transaction Analytics
+
+   - 18.5M+ records across 85 countries
+   - Real-time payment processing data
+   - Fraud detection and risk analysis
+
+2. **B2B Data** - Global B2B Sales Intelligence Database
+
+   - 12.3M+ records across 195 countries
+   - Company profiles and sales data
+   - Market intelligence and lead generation
+
+3. **E-commerce Data** - Cross-border Consumer Behavior Dataset
+   - 25.7M+ records across 168 countries
+   - Purchase patterns and customer analytics
+   - Cross-platform tracking and segmentation
+
+## 🤖 AI Analysis Examples
+
+Try these sample queries in the AI Analysis interface:
+
+- **Customer Analysis**: "Who are the top 5 customers by revenue?"
+- **Product Performance**: "What are the best performing product categories?"
+- **Trend Analysis**: "Show me sales trends over time"
+- **Demographics**: "Analyze customer demographics by age group"
+- **Geographic**: "What's the revenue distribution by country?"
+
+## 🎨 Design System
+
+### Color Palette
+
+- **Primary**: Blue (#3B82F6) - Trust and reliability
+- **Secondary**: Slate (#64748B) - Professional and clean
+- **Accent**: Green (#10B981) - Success and growth
+- **Warning**: Yellow (#F59E0B) - Attention and alerts
+- **Error**: Red (#EF4444) - Errors and critical actions
+
+### Typography
+
+- **Headings**: Inter font family with gradient effects
+- **Body**: System font stack for optimal readability
+- **Code**: Monospace for technical content
+
+## 📱 Responsive Design
+
+The platform is fully responsive across all device sizes:
+
+- **Desktop** (1200px+): Full-featured experience with sidebar navigation
+- **Tablet** (768px - 1199px): Adapted layouts with collapsible elements
+- **Mobile** (< 768px): Mobile-first design with touch-friendly interactions
+
+## 🔧 Development
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+- `npm run type-check` - Run TypeScript compiler
+
+### Code Quality
+
+- **TypeScript** - Strict type checking enabled
+- **ESLint** - Code linting with Next.js recommended rules
+- **Prettier** - Code formatting (configure as needed)
+- **Husky** - Git hooks for pre-commit checks (optional)
 
 ## 🚀 Deployment
 
 ### Vercel (Recommended)
 
 1. Connect your GitHub repository to Vercel
-2. Deploy automatically on push to main branch
-3. Environment variables will be automatically configured
+2. Configure environment variables if needed
+3. Deploy automatically on every push to main
 
 ### Other Platforms
 
-The app can be deployed to any platform that supports Next.js:
-
-- Netlify
-- Railway
-- DigitalOcean App Platform
-- AWS Amplify
+- **Netlify**: Configure build command as `npm run build`
+- **AWS Amplify**: Use the default Next.js build settings
+- **Docker**: Create a Dockerfile for containerized deployment
 
 ## 🤝 Contributing
+
+We welcome contributions! Please follow these steps:
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -193,22 +257,29 @@ The app can be deployed to any platform that supports Next.js:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📝 License
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## 🙋‍♂️ Support
+
+If you have any questions or need help:
+
+- 📧 Email: support@datrix.com
+- 💬 Discord: [Join our community](https://discord.gg/datrix)
+- 📚 Documentation: [docs.datrix.com](https://docs.datrix.com)
+- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/datrix/issues)
+
 ## 🙏 Acknowledgments
 
-- [Next.js](https://nextjs.org/) for the amazing React framework
-- [shadcn/ui](https://ui.shadcn.com/) for beautiful UI components
-- [Tailwind CSS](https://tailwindcss.com/) for utility-first styling
-- [Recharts](https://recharts.org/) for data visualization
-- [Lucide](https://lucide.dev/) for beautiful icons
-
-## 📞 Support
-
-For support, email support@datrix.com or create an issue in this repository.
+- [Next.js](https://nextjs.org/) - The React framework for production
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework
+- [Radix UI](https://www.radix-ui.com/) - Low-level UI primitives
+- [Recharts](https://recharts.org/) - A composable charting library
+- [Lucide](https://lucide.dev/) - Beautiful & consistent icons
 
 ---
 
 **Built with ❤️ by the Datrix Team**
+
+_Transform your data into insights with Datrix - the modern data marketplace platform._
